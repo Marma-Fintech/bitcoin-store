@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.70b88949.css",
+    "main.js": "/static/js/main.dadd2823.js",
+    "static/js/453.4584460f.chunk.js": "/static/js/453.4584460f.chunk.js",
+    "static/media/gpotus.jpg": "/static/media/gpotus.5ec403f0b582ab1e546f.jpg",
+    "static/media/goat-inner.png": "/static/media/goat-inner.c49590300d41900c23a0.png",
+    "static/media/MADE Outer Sans Medium PERSONAL USE.otf": "/static/media/MADE Outer Sans Medium PERSONAL USE.3228eaea867fe0546966.otf",
+    "static/media/$GPOTUS.svg": "/static/media/$GPOTUS.50c14b60d63fa279e5dff578defb6e82.svg",
+    "static/media/goat-p.webp": "/static/media/goat-p.f4d033c6751edb8c843e.webp",
+    "static/media/trump-hover.webp": "/static/media/trump-hover.933319a3f4a83bb47239.webp",
+    "static/media/dex-screener-logo-png_seeklogo-527276.png": "/static/media/dex-screener-logo-png_seeklogo-527276.6b8e4e0c7ed48e8fe9e1.png",
+    "index.html": "/index.html",
+    "static/media/copy.svg": "/static/media/copy.751a79b6defefa10982ec74ec50f5f1c.svg",
+    "main.70b88949.css.map": "/static/css/main.70b88949.css.map",
+    "main.dadd2823.js.map": "/static/js/main.dadd2823.js.map",
+    "453.4584460f.chunk.js.map": "/static/js/453.4584460f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70b88949.css",
+    "static/js/main.dadd2823.js"
+  ]
+}

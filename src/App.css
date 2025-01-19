@@ -1,16 +1,251 @@
 @font-face {
   font-family: myFirstFont;
-  src: url("fonts/binxchr.ttf");
+  src: url("fonts/MADE\ Outer\ Sans\ Medium\ PERSONAL\ USE.otf");
 }
 
 html,
 body {
   font-family: myFirstFont !important;
 }
+a {
+  text-decoration: none !important;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  /* display: none;  */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 40px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000bf 89.02%);
+  z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  pointer-events: none;
+}
+.bg-image {
+  /* The image used */
+  background-image: url("../src/assets/gpotus.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  /* Full height */
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.img-goat {
+  width: 45%;
+  position: relative;
+  margin-top: -85px;
+  pointer-events: fill;
+  cursor: pointer;
+  z-index: -1;
+}
+.p-text {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.contract {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  gap: 10px;
+  justify-content: center;
+}
+.img-flex {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.content-token {
+  position: relative;
+  top: 75%;
+}
+.bg-text {
+  /* background-color: rgb(0, 0, 0);  */
+  /* background-color: rgba(0, 0, 0, 0.4);  */
+  color: white;
+  background-image: url(../src/assets/goat-inner.png);
+  font-weight: bold;
+  /* border: 3px solid #f1f1f1; */
+  position: absolute;
+  top: 45%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: cover;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  z-index: 0;
+  /* width: 80%; */
+  /* border-radius: 15px; */
+  padding: 20px;
+  text-align: center;
+}
+
+.telegram-bg {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.telegram-bg img {
+  width: 20px;
+}
+.g-text {
+  color: #000;
+  margin-bottom: 0px;
+}
+.x-logo {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.footer img {
+  width: 50px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.bg-text1 {
+  /* background-color: rgb(0, 0, 0);  */
+  /* background-color: rgba(0, 0, 0, 0.4);  */
+  color: white;
+  /* background-image: url(../src/assets/goat-inner.png); */
+  font-weight: bold;
+  /* border: 3px solid #f1f1f1; */
+  position: absolute;
+  top: 72%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: cover;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  /* width: 80%; */
+  /* border-radius: 15px; */
+  padding: 20px;
+  text-align: center;
+}
+.ticker {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.marquee {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  max-width: 100%;
+  /* height: 200px; */
+  /* overflow-x: hidden; */
+}
+.b-section-marquee-box {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #181818; /* same as bg */
+}
+
+.b-section-marquee-box h2 {
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #475747;
+  font-size: 7em;
+  font-weight: 100;
+  flex-shrink: 0;
+  padding: 0 10px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  transform: translateX(0);
+  animation: b-text-scroll 35s linear infinite;
+}
+@keyframes b-text-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.content {
+  background-color: #c30100;
+  padding: 10px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+}
+.track {
+  position: relative;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.bot-text {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  background-color: #c30100;
+}
+.bot-text h2 {
+  padding: 10px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: bolder;
+}
 h1 {
   letter-spacing: 5px;
   margin: 25px !important;
 }
+.bg-back {
+  background-image: url("../src/assets/gpotus.jpg");
+  height: 100vh;
+  background-size: 100% 100%;
+
+  /* background-color: #ffd93a; */
+}
+
 #bitcoin {
   /* padding-top:80px; */
   /* width:200px; */
@@ -43,7 +278,9 @@ h1 {
   fill-opacity: 0;
   stroke: orange;
 }
-
+.container {
+  position: relative;
+}
 @keyframes dash {
   0% {
     stroke-dashoffset: 2110;
@@ -62,5 +299,223 @@ h1 {
     stroke-dashoffset: 0;
     opacity: 0;
     stroke: #fff;
+  }
+}
+/* ticker.css */
+
+.ticker-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.ticker-content {
+  display: inline-block;
+  white-space: nowrap;
+  transition: transform 1s linear;
+}
+
+.ticker-item {
+  display: inline-block;
+  padding-right: 2em; /* Adjust spacing between ticker items */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.ticker-scrolling {
+  animation: scroll 10s linear infinite;
+}
+
+.burger {
+  display: "flex";
+  flex-direction: "row";
+  align-items: baseline;
+  justify-content: "center";
+  background: none;
+  font-family: myFirstFont;
+  cursor: pointer;
+  font-weight: bold;
+  /* flex-wrap: nowrap; */
+}
+.heading {
+  -webkit-text-stroke: 1px;
+}
+
+.burger h6 {
+  font-weight: bold;
+}
+.mt {
+  margin-top: 150px;
+  padding: 0 50px;
+  margin-bottom: 150px;
+}
+.mt h2 {
+  font-size: 4vw;
+}
+
+.mt span {
+  font-size: 1.4vw;
+  border-top: 1px solid black;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .contract {
+    font-size: 15px;
+    /* display: flex; */
+    /* align-items: center; */
+    font-weight: 300;
+    gap: 1px;
+    justify-content: center;
+  }
+  .img-goat {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #overlay {
+    border-radius: 22px;
+  }
+  .ticker-coin {
+    width: 100%;
+    margin: 5px 0px;
+  }
+  .desk {
+    display: none !important;
+  }
+  .contract {
+    font-size: 15px !important;
+    margin-bottom: 1px;
+  }
+  .contract {
+    text-align: center;
+  }
+  .footer img {
+    width: 50px;
+  }
+  .p-text {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+  .img-goat {
+    width: 98% !important;
+    position: relative;
+    margin-top: -90px !important;
+    pointer-events: fill;
+    cursor: pointer;
+  }
+  .bg-text {
+    /* background-color: rgb(0, 0, 0);  */
+    /* background-color: rgba(0, 0, 0, 0.4);  */
+    color: white;
+    background-image: url(../src/assets/goat-inner.png);
+    font-weight: bold;
+    /* border: 3px solid #f1f1f1; */
+    position: absolute;
+    /* top: 30%; */
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: cover;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    z-index: 2;
+    /* width: 80%; */
+    /* border-radius: 15px; */
+    padding: 20px;
+    border: 8px solid #fff;
+    border-radius: 30px;
+    text-align: center;
+  }
+  .content-token {
+    top: 100%;
+    position: relative;
+    margin-top: 35px;
+  }
+  .img-flex {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .img-goat {
+    width: 45%;
+    position: relative;
+    margin-top: -85px;
+    pointer-events: fill;
+    cursor: pointer;
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 1440x) {
+  .bg-text {
+    /* background-color: rgb(0, 0, 0);  */
+    /* background-color: rgba(0, 0, 0, 0.4);  */
+    color: white;
+    background-image: url(../src/assets/goat-inner.png);
+    font-weight: bold;
+    /* border: 3px solid #f1f1f1; */
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: cover;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    z-index: 0;
+    /* width: 80%; */
+    /* border-radius: 15px; */
+    padding: 20px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .bg-text {
+    transform: translate(-50%, -75%);
+  }
+  .img-goat {
+    width: 50% !important;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .bg-text {
+    transform: translate(-50%, -50%);
+  }
+  .img-goat {
+    width: 60% !important;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  .bg-text {
+    transform: translate(-50%, -40%);
+  }
+  .img-goat {
+    width: 50% !important;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .img-goat {
+    width: 43% !important;
+  }
+  .bg-text {
+    transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (min-width: 993px) {
+  .mob {
+    display: none;
   }
 }
